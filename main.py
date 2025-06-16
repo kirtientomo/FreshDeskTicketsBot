@@ -17,7 +17,7 @@ from pandas import json_normalize
  
 # Load GGUF model
 llm_local = Llama(
-    model_path="c:\\Users\\KirtiS\\Downloads\\gemma-3-4b-it-Q4_0.gguf",
+    model_path="modelpath",
     verbose=False,
     n_ctx=15600
 )
@@ -54,7 +54,7 @@ Response:"""
  
 # Constants
 API_KEY = "APIKEY"  # Add your API key
-EXCEL_FILE_PATH = "C:\\Users\\KirtiS\\Downloads\\Ticket_updated_responses (1).xlsx"
+EXCEL_FILE_PATH = "excel"
  
 # Load Knowledge Base
 def load_knowledge_base(file_path):
@@ -103,7 +103,7 @@ def format_datetime(utc_str):
 # Fetch tickets from Freshdesk
 def fetch_todays_tickets():
     try:
-        url = "https://entomo.freshdesk.com/api/v2/tickets?updated_since=2025-06-10&include=description"
+        url = "link"
         response = requests.get(url, auth=HTTPBasicAuth(API_KEY, "X"))
         response.raise_for_status()
         data = response.json()
