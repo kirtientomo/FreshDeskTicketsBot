@@ -53,7 +53,7 @@ Response:"""
     return output['choices'][0]['text'].strip()
  
 # Constants
-API_KEY = "ufozNVMnHxpnX6j35G"  # Add your API key
+API_KEY = "APIKEY"  # Add your API key
 EXCEL_FILE_PATH = "C:\\Users\\KirtiS\\Downloads\\Ticket_updated_responses (1).xlsx"
  
 # Load Knowledge Base
